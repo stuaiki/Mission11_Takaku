@@ -1,0 +1,23 @@
+﻿@*
+    For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
+*@
+@{
+}
+
+<!--Access to Book-->
+@model Book
+
+<!--This is the html page view that is going to loop in index.cshtml and get data from Model-->
+<div class="card m-1 p-1">
+    <h4>
+        @Model.Title
+        <span class="badge rounded-pill bg-primary text-white float-end"><small>$@Model.Price</small></span>
+    </h4>
+
+    <span>Author: @Model.Author</span>
+    <span>Publisher: @Model.Publisher</span>
+    <span>ISBN: @Model.Isbn</span>
+    <span>Classification: @Model.Classification</span>
+    <span>Category: @Model.Category</span>
+    <span>Page Count: @Model.PageCount</span>
+</div>
